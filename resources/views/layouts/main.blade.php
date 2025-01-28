@@ -12,6 +12,8 @@
 
   <link href="css/bootstrap.css" rel="stylesheet">
 
+  <!-- <link href="css/bootstrap-icons.css" rel="stylesheet"> -->
+
   <!-- Favicons
   <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
   <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">

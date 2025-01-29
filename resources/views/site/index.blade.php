@@ -53,13 +53,21 @@
 
 <!-- cabeçalho -->
 <header data-bs-theme="dark">
-<nav class="navbar navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
+            <!-- Botão de menu -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+            <!-- Logo centralizado -->
+            <div class="position-absolute start-50 translate-middle-x">
+                <img src="aprimocar.jpeg" alt="aprimocar" class="img-fluid rounded-circle" width="80" height="80">
+            </div>
+
+            <!-- Conteúdo da navbar -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -70,14 +78,10 @@
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div> -->
+            </div>
         </div>
     </nav>
-</header> 
+</header>
 
 <main>
 
@@ -117,7 +121,7 @@
                 <div class="container">
                     <div class="carousel-caption text-end">
                         <h1>Insulfilm e PPF (Paint Protection Film)</h1>
-                        <p>Para garantir sempre um bom ambiente dentro do seu carro e proteção contra pequenas batidas</p>
+                        <p>Garantindo sempre um ambiente agradável dentro do seu carro e proteção contra pequenas batidas</p>
                     </div>
                 </div>
             </div>
@@ -142,30 +146,24 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                </svg>
-                <h2 class="fw-normal">Heading</h2>
-                <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                <img src="servico-automotivo.png" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+                <h2 class="fw-normal">Limpeza e manutenção</h2>
+                <p>Limpeza pesada para descontaminar a pintura do seu carro e manutenção para deixar a cor do seu carro sempre no brilho</p>
                 <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                </svg>
-                <h2 class="fw-normal">Heading</h2>
-                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                <img src="carro-pickup.png" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+                <h2 class="fw-normal">Pintura viva</h2>
+                <p>Polimento técnico com produtos de excelência para manter a pintura do seu carro sempre viva</p>
                 <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                </svg>
-                <h2 class="fw-normal">Heading</h2>
-                <p>And lastly this, the third column of representative placeholder content.</p>
+                <img src="corrida.png" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+                <h2 class="fw-normal">Atendimento delivery</h2>
+                <p>Não tem tempo para trazer seu carro até nós? Nós vamos até você, no conforto da sua casa!</p>
                 <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
@@ -224,4 +222,4 @@
         <!-- /END THE FEATURETTES -->
 
     </div><!-- /.container -->
-@endsection
+    @endsection

@@ -2,224 +2,355 @@
 
 @section('content')
 
-<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-        id="bd-theme"
-        type="button"
-        aria-expanded="false"
-        data-bs-toggle="dropdown"
-        aria-label="Toggle theme (auto)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
-            <use href="#circle-half"></use>
-        </svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-    </button>
-    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-                <svg class="bi me-2 opacity-50" width="1em" height="1em">
-                    <use href="#sun-fill"></use>
-                </svg>
-                Light
-                <svg class="bi ms-auto d-none" width="1em" height="1em">
-                    <use href="#check2"></use>
-                </svg>
-            </button>
-        </li>
-        <li>
-            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                <svg class="bi me-2 opacity-50" width="1em" height="1em">
-                    <use href="#moon-stars-fill"></use>
-                </svg>
-                Dark
-                <svg class="bi ms-auto d-none" width="1em" height="1em">
-                    <use href="#check2"></use>
-                </svg>
-            </button>
-        </li>
-        <li>
-            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-                <svg class="bi me-2 opacity-50" width="1em" height="1em">
-                    <use href="#circle-half"></use>
-                </svg>
-                Auto
-                <svg class="bi ms-auto d-none" width="1em" height="1em">
-                    <use href="#check2"></use>
-                </svg>
-            </button>
-        </li>
-    </ul>
-</div>
+<main class="main">
 
-<!-- cabeçalho -->
-<header data-bs-theme="dark">
-    <nav class="navbar navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-            <!-- Botão de menu -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
 
-            <!-- Logo centralizado -->
-            <div class="position-absolute start-50 translate-middle-x">
-                <img src="aprimocar.jpeg" alt="aprimocar" class="img-fluid rounded-circle" width="80" height="80">
+        <img src="assets/img/pzs.gif" alt="" data-aos="fade-in">
+
+        <div class="container">
+
+            <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-xl-6 col-lg-8">
+                    <h2>Aquele cuidado para deixar sua nave um brinco<span>.</span></h2>
+                    <p>Confie sem pensar, confie na Aprimocar</p>
+                </div>
             </div>
 
-            <!-- Conteúdo da navbar -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-<main>
-
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                </svg>
-                <div class="container">
-                    <div class="carousel-caption text-start">
-                        <h1>Lavagens Técnicas</h1>
-                        <p class="opacity-75">Dê aquele trato que seu carro merece, com produtos de qualidade e com profissionais capacitados.</p>
+            <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box">
+                        <i class="bi bi-lightbulb"></i>
+                        <h3><a href="">Polimentos de faróis</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon-box">
+                        <i class="bi bi-brush"></i>
+                        <h3><a href="">Limpeza básica e detalhada</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="icon-box">
+                        <i class="bi bi-shield-plus"></i>
+                        <h3><a href="">PPF e Insulfilm</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="icon-box">
+                        <i class="bi bi-search"></i>
+                        <h3><a href="">Higienização</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
+                    <div class="icon-box">
+                        <i class="bi bi-gem"></i>
+                        <h3><a href="">Polimento e vitrificação de pintura</a></h3>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                </svg>
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Polimentos e proteção</h1>
-                        <p>Seu carro merece o melhor. Reaviva a pintura e proteja-a por até 3 anos.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                </svg>
-                <div class="container">
-                    <div class="carousel-caption text-end">
-                        <h1>Insulfilm e PPF (Paint Protection Film)</h1>
-                        <p>Garantindo sempre um ambiente agradável dentro do seu carro e proteção contra pequenas batidas</p>
-                    </div>
-                </div>
-            </div>
+
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gy-4">
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img src="assets/img/6lt.gif" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 order-2 order-lg-1 content">
+                    <h3>Olá, somos a Aprimocar</h3>
+                    <p class="fst-italic">
+                        Nascido de um sonho de dois amigos, a Aprimocar é uma empresa que vem para revolucionar o mercado de serviços automotivos,
+                        com um serviço de qualidade e um preço justo.
+                    </p>
+                    <!-- <ul>
+          <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+          <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+          <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+        </ul> -->
+                    <p>
+                        Trabalhando com as melhores marcas do mercado, a Aprimocar garante sua satifação em qualquer serviço, seja ele uma simples limpeza
+                        ou entrega de um serviço completo.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                    {
+                        "loop": true,
+                        "speed": 600,
+                        "autoplay": {
+                            "delay": 5000
+                        },
+                        "slidesPerView": "auto",
+                        "pagination": {
+                            "el": ".swiper-pagination",
+                            "type": "bullets",
+                            "clickable": true
+                        },
+                        "breakpoints": {
+                            "320": {
+                                "slidesPerView": 2,
+                                "spaceBetween": 40
+                            },
+                            "480": {
+                                "slidesPerView": 3,
+                                "spaceBetween": 60
+                            },
+                            "640": {
+                                "slidesPerView": 4,
+                                "spaceBetween": 80
+                            },
+                            "992": {
+                                "slidesPerView": 6,
+                                "spaceBetween": 120
+                            }
+                        }
+                    }
+                </script>
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide"><img src="assets/img/clients/vonixx-logo.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/carpro-logo.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/zacs-logo.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/nacao-detail.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/logo-sigma.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/dub-boyz-logo.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/gyeon-logo.png" class="img-fluid" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Serviços</h2>
+            <p>Confira nossos serviços</p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-activity"></i>
+                        </div>
+                        <a href="service-details.html" class="stretched-link">
+                            <h3>Nesciunt Mete</h3>
+                        </a>
+                        <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-broadcast"></i>
+                        </div>
+                        <a href="service-details.html" class="stretched-link">
+                            <h3>Eosle Commodi</h3>
+                        </a>
+                        <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-easel"></i>
+                        </div>
+                        <a href="service-details.html" class="stretched-link">
+                            <h3>Ledo Markt</h3>
+                        </a>
+                        <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-bounding-box-circles"></i>
+                        </div>
+                        <a href="service-details.html" class="stretched-link">
+                            <h3>Asperiores Commodit</h3>
+                        </a>
+                        <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+                        <a href="service-details.html" class="stretched-link"></a>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-calendar4-week"></i>
+                        </div>
+                        <a href="service-details.html" class="stretched-link">
+                            <h3>Velit Doloremque</h3>
+                        </a>
+                        <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+                        <a href="service-details.html" class="stretched-link"></a>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-chat-square-text"></i>
+                        </div>
+                        <a href="service-details.html" class="stretched-link">
+                            <h3>Dolori Architecto</h3>
+                        </a>
+                        <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+                        <a href="service-details.html" class="stretched-link"></a>
+                    </div>
+                </div><!-- End Service Item -->
+
+            </div>
+
+        </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <!-- <section id="call-to-action" class="call-to-action section dark-background">
+
+  <img src="assets/img/cta-bg.jpg" alt="">
+
+  <div class="container">
+    <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+      <div class="col-xl-10">
+        <div class="text-center">
+          <h3>Call To Action</h3>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a class="cta-btn" href="#">Call To Action</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>/Call To Action Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Equipe</h2>
+            <p>Conheça nossa equipe</p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-member">
+                        <div class="member-img">
+                            <img src="assets/img/team/jack.jpg" class="img-fluid" alt="">
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter-x"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Jackson Ferreira</h4>
+                            <span>Sócio Fundador</span>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-member">
+                        <div class="member-img">
+                            <img src="assets/img/team/luis.jpg" class="img-fluid" alt="">
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter-x"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Luis de Bortoli</h4>
+                            <span>Socio Fundador</span>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+
+            </div>
+
+        </div>
+
+    </section><!-- /Team Section -->
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Entre em contato</h2>
+        <p>Como nos encontrar?</p>
     </div>
 
-
-    <!-- Marketing messaging and featurettes
-  ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-        <!-- Three columns of text below the carousel -->
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
-            <div class="col-lg-4">
-                <img src="servico-automotivo.png" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                <h2 class="fw-normal">Limpeza e manutenção</h2>
-                <p>Limpeza pesada para descontaminar a pintura do seu carro e manutenção para deixar a cor do seu carro sempre no brilho</p>
-                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <img src="carro-pickup.png" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                <h2 class="fw-normal">Pintura viva</h2>
-                <p>Polimento técnico com produtos de excelência para manter a pintura do seu carro sempre viva</p>
-                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <img src="corrida.png" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                <h2 class="fw-normal">Atendimento delivery</h2>
-                <p>Não tem tempo para trazer seu carro até nós? Nós vamos até você, no conforto da sua casa!</p>
-                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-
-
-        <!-- START THE FEATURETTES -->
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">Recuperação e <span class="text-body-secondary">vitrificação de faróis.</span></h2>
-                <p class="lead">Garatindo sua segurança e a melhor visibilidade a noite.</p>
+            <div class="col-md-4">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                    <div>
+                        <h3>Endereço</h3>
+                        <p>Av. José Scotti, 106, Francisco Beltrão - PR</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-5">
-                <img src="farol_celta.jpeg" alt="farol_celta" class="featurette-image img-fluid mx-auto" width="500" height="500">
-                <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-                </svg> -->
+
+            <div class="col-md-4">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-telephone flex-shrink-0"></i>
+                    <div>
+                        <h3>Fale conosco <p>Jackson Ferreira</p></h3>
+                        <p>(46) 99977-8728</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-telephone flex-shrink-0"></i>
+                    <div>
+                        <h3>Fale conosco <p>Luis de Bortoli</p></h3>
+                        <p>(46) 99927-4917</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+</section>
 
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-                <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-                </svg>
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-                <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-            </div>
-            <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-                </svg>
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
-
-    </div><!-- /.container -->
-    @endsection
+</main>
+@endsection

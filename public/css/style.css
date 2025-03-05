@@ -14,3 +14,15 @@
 .invisible {
   visibility: hidden !important;
 }
+
+.hero img {
+  max-height: 50vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .hero img {
+      max-height: 30vh;
+  }
+}

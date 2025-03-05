@@ -28,7 +28,7 @@
                 <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
                     <div class="icon-box">
                         <i class="bi bi-brush"></i>
-                        <h3><a href="">Limpeza básica e detalhada</h3>
+                        <h3>Limpeza básica e detalhada</h3>
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">

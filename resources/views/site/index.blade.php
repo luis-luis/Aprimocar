@@ -22,31 +22,31 @@
                 <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="icon-box">
                         <i class="bi bi-lightbulb"></i>
-                        <h3><a href="">Polimentos de faróis</a></h3>
+                        <h3>Polimentos de faróis</h3>
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
                     <div class="icon-box">
                         <i class="bi bi-brush"></i>
-                        <h3><a href="#">Limpeza básica e detalhada</a></h3>
+                        <h3><a href="">Limpeza básica e detalhada</h3>
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
                     <div class="icon-box">
                         <i class="bi bi-shield-plus"></i>
-                        <h3><a href="">PPF e Insulfilm</a></h3>
+                        <h3>PPF e Insulfilm</h3>
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
                     <div class="icon-box">
                         <i class="bi bi-search"></i>
-                        <h3><a href="">Higienização</a></h3>
+                        <h3>Higienização</h3>
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
                     <div class="icon-box">
                         <i class="bi bi-gem"></i>
-                        <h3><a href="">Polimento e vitrificação de pintura</a></h3>
+                        <h3>Polimento e vitrificação de pintura</h3>
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-        <img src="PZS.gif" alt="" data-aos="fade-in" class="img-fluid w-100 h-auto">
+        <img src="PZS.gif" alt="" data-aos="fade-in" class="img-fluid">
 
         <div class="container">
 

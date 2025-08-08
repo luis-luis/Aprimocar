@@ -15,7 +15,8 @@
     </div>
     <div class="row">
       <div class="col">
-        <form>
+
+        <form id="form-contato" method="post" action="https://formspree.io/f/mdkdprzb">
           <div class="form-group">
             <label for="name">Seu Nome</label>
             <input type="text" class="form-control" id="name" placeholder="Qual seu nome?">

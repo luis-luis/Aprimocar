@@ -1,0 +1,21 @@
+/* navstyle.css */
+
+/* Navbar visível */
+#navmenu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  transition: top 0.3s;
+  z-index: 9999;
+}
+
+/* Navbar escondida (move para cima) */
+#navmenu.hidden {
+  top: -60px; /* Ajuste conforme a altura da sua navbar */
+}
+
+/* Mostrar navbar ao passar mouse */
+#navmenu:hover {
+  top: 0 !important;
+}

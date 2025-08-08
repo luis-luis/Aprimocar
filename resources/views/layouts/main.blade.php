@@ -26,6 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="navstyle.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
@@ -136,6 +137,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="navscript.js"></script>
 
 </body>
 

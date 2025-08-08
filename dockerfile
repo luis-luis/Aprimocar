@@ -31,4 +31,4 @@ RUN composer install --no-dev --optimize-autoloader --no-progress
 EXPOSE 80
 
 # Comando para iniciar o servidor e rodar as migrações
-CMD ["sh", "-c", "php artisan config:cache && php artisan migrate --force && apache2-foreground"]
+CMD ["sh", "-c", "php artisan config:cache && apache2-foreground"]

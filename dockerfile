@@ -24,11 +24,18 @@ COPY . .
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 
+# Ajusta o DocumentRoot do Apache para a pasta public
+RUN sed -i 's|/var/www/html|/var/www/html/public|g' /etc/apache2/sites-available/000-default.conf
+
+# Ajusta permissões da pasta public
+RUN chown -R www-data:www-data /var/www/html/public
+RUN chmod -R 755 /var/www/html/public
+
 # Instala as dependências com otimização para produção
 RUN composer install --no-dev --optimize-autoloader --no-progress
 
 # Expõe a porta padrão do Apache
 EXPOSE 80
 
-# Comando para iniciar o servidor e rodar as migrações
+# Comando para iniciar o servidor Apache
 CMD ["sh", "-c", "php artisan config:cache && apache2-foreground"]

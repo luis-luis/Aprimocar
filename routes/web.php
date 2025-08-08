@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [IndexController::class, 'index'])->name('site.index');
+
+Route::get('/contato', [IndexController::class, 'contatos'])->name('site.contatos');

@@ -10,4 +10,8 @@ class IndexController extends Controller
     {
         return view('site.index');
     }
+
+    public function contatos(){
+        return view('site.contatos');
+    }
 }

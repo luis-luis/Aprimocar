@@ -1,0 +1,45 @@
+  /* Aplica apenas aos inputs/textarea do Bootstrap (form-control) */
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.20);
+    /* branco translúcido - ajusta o 0.40 se quiser mais/menos */
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    color: #000;
+    /* texto legível mesmo com fundo translúcido */
+    transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.2s ease;
+    /* efeito "frosted glass" opcional */
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+  }
+
+  /* textarea também (caso queira separar explicitamente) */
+  textarea.form-control {
+    background-color: rgba(255, 255, 255, 0.40);
+  }
+
+  /* Quando focado, deixa branco sólido para digitar */
+  .form-control:focus {
+    background-color: rgba(255, 255, 255, 1);
+    /* branco sólido */
+    border-color: rgba(0, 0, 0, 0.25);
+    box-shadow: none;
+    /* remove sombra de foco padrão do bootstrap, ajusta se quiser */
+    outline: none;
+  }
+
+  /* Placeholder mais suave sobre o fundo translúcido */
+  .form-control::placeholder {
+    color: rgba(0, 0, 0, 0.55);
+  }
+
+  /* Caso seu Bootstrap esteja sobrescrevendo ainda: aumentar especificidade */
+  .hero .container .form-control {
+    background-color: rgba(255, 255, 255, 0.20);
+  }
+
+  .hero .container .form-group:focus-within .form-control,
+  .hero .container .mb-3:focus-within .form-control {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  /* Se nada mais funcionar (último recurso), use !important */
+  /* .form-control { background-color: rgba(255,255,255,0.40) !important; } */

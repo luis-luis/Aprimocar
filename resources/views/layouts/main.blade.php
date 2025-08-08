@@ -48,7 +48,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">Agende seu horário</a>
+      <a class="btn-getstarted" href="{{route('site.contatos')}}">Agende seu horário</a>
 
     </div>
   </header>

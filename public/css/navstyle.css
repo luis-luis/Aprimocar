@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: #fff;
+  /* background: #fff; */
   transition: top 0.3s;
   z-index: 9999;
 }

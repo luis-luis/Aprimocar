@@ -1,7 +1,5 @@
-/* navstyle.css */
-
-/* Navbar visível */
-#navmenu {
+/* Mantém o header fixo no topo com transição */
+#header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -10,12 +8,12 @@
   z-index: 9999;
 }
 
-/* Navbar escondida (move para cima) */
-#navmenu.hidden {
-  top: -60px; /* Ajuste conforme a altura da sua navbar */
+/* Esconde o header movendo para cima */
+#header.hidden {
+  top: -80px; /* Ajuste a altura do header */
 }
 
-/* Mostrar navbar ao passar mouse */
-#navmenu:hover {
+/* Mostrar o header ao passar o mouse */
+#header:hover {
   top: 0 !important;
 }

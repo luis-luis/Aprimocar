@@ -11,6 +11,9 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install gd pdo pdo_mysql zip \
     && docker-php-ext-enable pdo_mysql
 
+# Ativa mod_rewrite do Apache
+RUN a2enmod rewrite
+
 # Instala o Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
@@ -26,6 +29,9 @@ RUN chown -R www-data:www-data /var/www/html \
 
 # Ajusta o DocumentRoot do Apache para a pasta public
 RUN sed -i 's|/var/www/html|/var/www/html/public|g' /etc/apache2/sites-available/000-default.conf
+
+# Permite uso do .htaccess
+RUN sed -i '/<Directory \/var\/www\/html\/public>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
 
 # Ajusta permissões da pasta public
 RUN chown -R www-data:www-data /var/www/html/public
